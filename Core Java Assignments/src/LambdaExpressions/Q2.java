@@ -2,7 +2,6 @@ package LambdaExpressions;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Q2
@@ -43,6 +42,7 @@ public class Q2
 	
 	public static void main(String[] args)
 	{
+		//TO DO: Figure out how to use these
 		  //Predicate<Integer> orderNumCheck =  x -> x > 10000;	
 		  //Predicate<String> orderStatusCheck = (x -> (x=="ACCEPTED" )||(x == "COMPLETED"));
 		  
@@ -53,7 +53,7 @@ public class Q2
 				  new Q2(77000, "WORKING"),
 				  new Q2(14, "UNCOMPLETE"),
 				  new Q2(30000, "PENDING"),
-				  new Q2(27000, "COMPLETED"));
+				  new Q2(27000, "ACCEPTED"));
 		  
 		 List<Q2>sortedOrders= list1.stream()
 				 .filter(f->f.getorderNum()>10000)
